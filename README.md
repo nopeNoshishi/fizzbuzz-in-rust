@@ -2,7 +2,7 @@
 
 This program implements the famous FizzBuzz problem by Rust.
 
-**Usage**
+**Usage**  
 Input the range of numbers,  the number you output `Fizz`, and the number you want to output `Buzz`.
 
 ```bash
