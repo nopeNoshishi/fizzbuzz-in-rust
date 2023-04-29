@@ -1,0 +1,10 @@
+[package]
+name = "fizzbuzz"
+version = "0.1.0"
+authors = ["nopeNoshishi <nopenoshishi@gmail.com>"]
+description = "This program can calculate FizzBuzz!"
+edition = "2021"
+
+[dependencies]
+structopt = "0.3"
+num = "0.4"
