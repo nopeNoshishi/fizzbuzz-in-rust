@@ -52,7 +52,7 @@ fn main() {
 /// Converts numbers matching the fizzbuzz rule among 1 to given integers
 /// to strings.
 ///
-/// Usage
+/// ## Example
 /// ```
 /// let vec = ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"]
 /// let test_case: Vec<String> = vec.iter().map(|&s| s.to_string()).collect();
@@ -84,7 +84,7 @@ fn fizzbuzz(number: usize, fizz: usize, buzz: usize) -> Vec<String> {
 /// Calculates the sum of strings that can be parsed into number
 /// obtained by fizzbuzz function.
 ///
-/// Usage
+/// ## Example
 /// ```
 /// let answer = fizzbuzz(10, 3, 5);
 ///
