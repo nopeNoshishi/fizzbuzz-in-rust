@@ -14,7 +14,7 @@ use structopt::StructOpt;
 
 #[derive(Debug, StructOpt)]
 #[structopt(author, about)]
-pub struct Argument {
+struct Argument {
     /// Upper limit of integers to which the fizzbuzz rule applies
     #[structopt(short, long)]
     number: usize,
@@ -59,7 +59,7 @@ fn main() {
 ///
 /// assert_eq!(fizzbuzz(10), test_case);
 /// ```
-pub fn fizzbuzz(number: usize, fizz: usize, buzz: usize) -> Vec<String> {
+fn fizzbuzz(number: usize, fizz: usize, buzz: usize) -> Vec<String> {
     // Caluculates least common multiple
     let lcm = lcm(fizz, buzz);
 
@@ -91,7 +91,7 @@ pub fn fizzbuzz(number: usize, fizz: usize, buzz: usize) -> Vec<String> {
 /// // 1 + 2 + 4 + 7 + 8 = 22
 /// assert_eq!(calculate(answer), 22);
 /// ```
-pub fn calculate(fizzbuzz_ans: Vec<String>) -> usize {
+fn calculate(fizzbuzz_ans: Vec<String>) -> usize {
     let sum: usize = fizzbuzz_ans
         .iter()
         .filter_map(|x| x.parse::<usize>().ok())
